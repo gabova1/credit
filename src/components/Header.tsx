@@ -29,7 +29,7 @@ export default function Header() {
               </svg>
             </div>
             <div>
-              <div className="font-display font-semibold text-slate-900 text-lg leading-tight tracking-tight">КредитПодбор</div>
+              <div className="font-display font-semibold text-slate-900 text-lg leading-tight tracking-tight">ФинансПодбор</div>
               <div className="text-xs text-slate-500 leading-tight">Умный подбор финансов онлайн</div>
             </div>
           </Link>
@@ -43,8 +43,8 @@ export default function Header() {
                   key={href}
                   href={href}
                   className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${active
-                      ? "bg-brand-50 text-brand-700 shadow-[inset_0_0_0_1px_rgba(18,104,219,0.15)]"
-                      : "text-slate-600 hover:text-slate-900 hover:bg-white/90"
+                    ? "bg-brand-50 text-brand-700 shadow-[inset_0_0_0_1px_rgba(18,104,219,0.15)]"
+                    : "text-slate-600 hover:text-slate-900 hover:bg-white/90"
                     }`}
                 >
                   {label}
@@ -83,8 +83,8 @@ export default function Header() {
                     href={href}
                     onClick={() => setOpen(false)}
                     className={`px-4 py-3 rounded-lg text-sm font-semibold transition-all ${active
-                        ? "bg-brand-50 text-brand-700"
-                        : "text-slate-600 hover:text-slate-900 hover:bg-white"
+                      ? "bg-brand-50 text-brand-700"
+                      : "text-slate-600 hover:text-slate-900 hover:bg-white"
                       }`}
                   >
                     {label}
