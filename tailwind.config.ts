@@ -9,6 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        brand: {
+          50: "#eef8ff",
+          100: "#d8efff",
+          200: "#b8e0ff",
+          300: "#84c9ff",
+          400: "#4aa9ff",
+          500: "#1e87ff",
+          600: "#1268db",
+          700: "#124fb0",
+          800: "#163f89",
+          900: "#18376f",
+        },
         primary: {
           50: "#eff6ff",
           100: "#dbeafe",
@@ -48,33 +60,26 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: [
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Arial",
-          "sans-serif",
-        ],
+        sans: ["var(--font-manrope)", "system-ui", "sans-serif"],
+        display: ["var(--font-sora)", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        "soft": "0 2px 8px rgba(0, 0, 0, 0.06)",
-        "medium": "0 4px 12px rgba(0, 0, 0, 0.08)",
-        "strong": "0 8px 24px rgba(0, 0, 0, 0.12)",
-        "card": "0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.05)",
-        "card-hover": "0 4px 20px rgba(0, 0, 0, 0.1)",
+        soft: "0 2px 8px rgba(15, 23, 42, 0.06)",
+        medium: "0 8px 22px rgba(15, 23, 42, 0.1)",
+        strong: "0 20px 45px rgba(15, 23, 42, 0.14)",
+        card: "0 3px 14px rgba(15, 23, 42, 0.08)",
+        "card-hover": "0 22px 42px rgba(15, 23, 42, 0.16)",
       },
       borderRadius: {
-        "xl": "12px",
+        xl: "12px",
         "2xl": "16px",
         "3xl": "20px",
       },
       animation: {
-        "fade-in": "fadeIn 0.4s ease-out",
-        "slide-up": "slideUp 0.4s ease-out",
-        "slide-down": "slideDown 0.3s ease-out",
-        "pulse-slow": "pulse 3s infinite",
+        "fade-in": "fadeIn 0.5s ease-out",
+        "slide-up": "slideUp 0.55s cubic-bezier(.2,.65,.2,1)",
+        "slide-down": "slideDown 0.35s ease-out",
+        "float-slow": "floatSlow 8s ease-in-out infinite",
       },
       keyframes: {
         fadeIn: {
@@ -82,16 +87,21 @@ const config: Config = {
           "100%": { opacity: "1" },
         },
         slideUp: {
-          "0%": { opacity: "0", transform: "translateY(20px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
+          "0%": { opacity: "0", transform: "translateY(24px) scale(0.98)" },
+          "100%": { opacity: "1", transform: "translateY(0) scale(1)" },
         },
         slideDown: {
           "0%": { opacity: "0", transform: "translateY(-10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        floatSlow: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
         },
       },
     },
   },
   plugins: [],
 };
+
 export default config;
