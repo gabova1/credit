@@ -36,7 +36,7 @@ const CATEGORIES = [
     title: "Вакансии",
     href: "/vakansii",
     count: jobs.length,
-    description: "Удалённая работа",
+    description: "Большая зарплата",
     color: "bg-purple-600",
     hoverColor: "hover:bg-purple-700",
     icon: (
