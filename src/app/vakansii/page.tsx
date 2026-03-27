@@ -4,7 +4,7 @@ import { jobs } from "@/lib/data";
 import JobsGrid from "@/components/JobsGrid";
 
 export const metadata: Metadata = {
-  title: "Вакансии с высокой зарплатой 2024 — работа онлайн, курьер, банк",
+  title: "Вакансии с высокой зарплатой 2026 — работа онлайн, курьер, банк",
   description:
     "Актуальные вакансии без опыта и с опытом. Работа курьером, в банке, удалённо. Зарплата от 70 000 рублей. Быстрый отклик, официальное трудоустройство.",
   keywords: [
@@ -43,14 +43,14 @@ export default function VakansiiPage() {
             </svg>
             <span className="text-white">Вакансии</span>
           </nav>
-          
+
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 text-balance">
-            Вакансии и работа онлайн 2024
+            Вакансии и работа онлайн 2026
           </h1>
           <p className="text-lg text-purple-100 max-w-2xl mb-8 text-pretty">
             {jobs.length} актуальных вакансий от проверенных работодателей. Зарплата до {maxSalary.toLocaleString("ru")} рублей, {remoteCount} удалённые позиции.
           </p>
-          
+
           {/* Feature badges */}
           <div className="flex flex-wrap gap-3">
             {FEATURES.map((f) => (
@@ -78,7 +78,7 @@ export default function VakansiiPage() {
         <div className="container">
           <article className="max-w-4xl mx-auto">
             <h2 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-8">
-              Как найти хорошую работу в 2024 году
+              Как найти хорошую работу в 2026 году
             </h2>
             <div className="prose prose-slate prose-lg max-w-none">
               <p className="text-slate-600 leading-relaxed">

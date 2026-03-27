@@ -23,34 +23,36 @@ export default function DebitCardCard({ card, index }: Props) {
         </div>
       )}
 
-      {/* Header with LARGE logo - 160x160 */}
-      <div className="flex flex-col items-center text-center mb-6">
-        <div className="logo-container w-40 h-40 shrink-0 mb-4">
+      {/* Header with unified logo placement */}
+      <div className="flex items-center gap-4 mb-5">
+        <div className="logo-container w-20 h-20 shrink-0">
           <Image
             src={logo}
             alt={card.name}
-            width={160}
-            height={160}
-            className="object-contain p-3"
+            width={80}
+            height={80}
+            className="object-contain p-2"
           />
         </div>
-        <h3 className="font-bold text-slate-900 text-lg leading-snug line-clamp-2 mb-1">
-          {card.name}
-        </h3>
-        <p className="text-sm text-slate-500">{card.bank}</p>
+        <div className="min-w-0 flex-1">
+          <h3 className="font-semibold text-slate-900 text-base leading-snug line-clamp-2 mb-1">
+            {card.name}
+          </h3>
+          <p className="text-sm text-slate-500 truncate">{card.bank}</p>
+        </div>
       </div>
 
       {/* Stats */}
       <div className="grid grid-cols-3 gap-3 mb-5">
-        <div className="bg-green-50 border border-green-100 rounded-xl p-3 text-center">
+        <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-3 text-center">
           <div className="text-xs text-slate-500 mb-1">Кэшбэк</div>
-          <div className="text-base font-bold text-green-600">{card.cashback}</div>
+          <div className="text-base font-bold text-emerald-700">{card.cashback}</div>
         </div>
-        <div className="bg-slate-50 border border-slate-100 rounded-xl p-3 text-center">
+        <div className="bg-slate-50/80 border border-slate-100 rounded-xl p-3 text-center">
           <div className="text-xs text-slate-500 mb-1">Обслуживание</div>
           <div className="text-xs font-bold text-slate-800">{card.service}</div>
         </div>
-        <div className="bg-slate-50 border border-slate-100 rounded-xl p-3 text-center">
+        <div className="bg-slate-50/80 border border-slate-100 rounded-xl p-3 text-center">
           <div className="text-xs text-slate-500 mb-1">Доставка</div>
           <div className="text-xs font-bold text-slate-800">{card.delivery}</div>
         </div>

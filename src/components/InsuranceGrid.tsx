@@ -31,7 +31,7 @@ export default function InsuranceGrid({ items }: Props) {
   return (
     <div>
       {/* Filter bar */}
-      <div className="bg-white border border-slate-200 rounded-2xl p-5 mb-6 shadow-sm">
+      <div className="card p-5 mb-6">
         <label className="flex items-center gap-2 text-sm font-medium text-slate-700 mb-3">
           <svg className="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -45,11 +45,10 @@ export default function InsuranceGrid({ items }: Props) {
               <button
                 key={c.value}
                 onClick={() => setCat(c.value)}
-                className={`filter-btn flex items-center gap-2 ${
-                  cat === c.value
+                className={`filter-btn flex items-center gap-2 ${cat === c.value
                     ? `${categoryColors[c.value]} text-white shadow-md`
                     : "filter-btn-inactive"
-                }`}
+                  }`}
               >
                 {c.label}
                 <span className={`text-xs px-1.5 py-0.5 rounded-full ${cat === c.value ? "bg-white/20" : "bg-slate-200 text-slate-500"}`}>
@@ -62,7 +61,7 @@ export default function InsuranceGrid({ items }: Props) {
       </div>
 
       {/* Results count */}
-      <div className="flex items-center justify-between mb-5">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-5">
         <p className="text-sm text-slate-600">
           Предложений: <span className="font-semibold text-slate-900">{filtered.length}</span>
         </p>

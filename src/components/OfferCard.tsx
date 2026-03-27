@@ -23,48 +23,50 @@ export default function OfferCard({ offer, index }: Props) {
         </div>
       )}
 
-      {/* Header with LARGE logo - 160x160 */}
-      <div className="flex flex-col items-center text-center mb-6">
-        <div className="logo-container w-40 h-40 shrink-0 mb-4">
+      {/* Header with unified logo placement */}
+      <div className="flex items-center gap-4 mb-5">
+        <div className="logo-container w-20 h-20 shrink-0">
           <Image
             src={logo}
             alt={offer.name}
-            width={160}
-            height={160}
-            className="object-contain p-3"
+            width={80}
+            height={80}
+            className="object-contain p-2"
           />
         </div>
-        <h3 className="font-bold text-slate-900 text-lg leading-snug line-clamp-2 mb-1">
-          {offer.name}
-        </h3>
-        <p className="text-sm text-slate-500">{offer.company}</p>
+        <div className="min-w-0 flex-1">
+          <h3 className="font-semibold text-slate-900 text-base leading-snug line-clamp-2 mb-1">
+            {offer.name}
+          </h3>
+          <p className="text-sm text-slate-500 truncate">{offer.company}</p>
+        </div>
       </div>
 
       {/* Stats grid */}
       <div className="grid grid-cols-3 gap-3 mb-5">
-        <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 text-center">
+        <div className="bg-brand-50 border border-brand-100 rounded-xl p-3 text-center">
           <div className="text-xs text-slate-500 mb-1">Ставка</div>
-          <div className="text-base font-bold text-blue-600">{offer.rate}</div>
+          <div className="text-base font-bold text-brand-700">{offer.rate}</div>
         </div>
         <div className="bg-slate-50 border border-slate-100 rounded-xl p-3 text-center">
           <div className="text-xs text-slate-500 mb-1">Сумма</div>
           <div className="text-sm font-bold text-slate-800">{offer.amount} &#8381;</div>
         </div>
-        <div className="bg-slate-50 border border-slate-100 rounded-xl p-3 text-center">
+        <div className="bg-slate-50/80 border border-slate-100 rounded-xl p-3 text-center">
           <div className="text-xs text-slate-500 mb-1">Срок</div>
           <div className="text-sm font-bold text-slate-800">{offer.term}</div>
         </div>
       </div>
 
       {/* Approval & time indicators */}
-      <div className="flex flex-col gap-2 mb-5 p-4 bg-slate-50 rounded-xl border border-slate-100">
+      <div className="flex flex-col gap-2 mb-5 p-4 bg-slate-50/80 rounded-xl border border-slate-100">
         <div className="flex items-center justify-between">
           <span className="text-sm text-slate-600">Одобрение:</span>
           <span className="text-sm font-bold text-green-600">{offer.approval}</span>
         </div>
         <div className="flex items-center justify-between">
           <span className="text-sm text-slate-600">Решение:</span>
-          <span className="text-sm font-bold text-blue-600">{offer.time}</span>
+          <span className="text-sm font-bold text-brand-600">{offer.time}</span>
         </div>
       </div>
 
