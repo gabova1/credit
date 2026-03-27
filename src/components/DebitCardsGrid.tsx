@@ -23,7 +23,7 @@ export default function DebitCardsGrid({ cards }: Props) {
   return (
     <div>
       {/* Filter bar */}
-      <div className="bg-white border border-slate-200 rounded-2xl p-5 mb-6 shadow-sm">
+      <div className="card p-5 mb-6">
         <div className="flex flex-col lg:flex-row gap-6">
           {/* Sort options */}
           <div>
@@ -41,18 +41,17 @@ export default function DebitCardsGrid({ cards }: Props) {
                 <button
                   key={o.value}
                   onClick={() => setSort(o.value as SortKey)}
-                  className={`filter-btn ${
-                    sort === o.value
+                  className={`filter-btn ${sort === o.value
                       ? "bg-success-600 text-white shadow-md"
                       : "filter-btn-inactive"
-                  }`}
+                    }`}
                 >
                   {o.label}
                 </button>
               ))}
             </div>
           </div>
-          
+
           {/* Bank filter */}
           <div className="flex-1">
             <label className="flex items-center gap-2 text-sm font-medium text-slate-700 mb-3">
@@ -66,11 +65,10 @@ export default function DebitCardsGrid({ cards }: Props) {
                 <button
                   key={b}
                   onClick={() => setBank(b)}
-                  className={`filter-btn ${
-                    bank === b
+                  className={`filter-btn ${bank === b
                       ? "bg-success-600 text-white shadow-md"
                       : "filter-btn-inactive"
-                  }`}
+                    }`}
                 >
                   {b === "all" ? "Все банки" : b}
                 </button>
@@ -81,11 +79,11 @@ export default function DebitCardsGrid({ cards }: Props) {
       </div>
 
       {/* Results count */}
-      <div className="flex items-center justify-between mb-5">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between mb-5">
         <p className="text-sm text-slate-600">
           Найдено карт: <span className="font-semibold text-slate-900">{filtered.length}</span>
         </p>
-        <div className="flex items-center gap-2 text-sm text-slate-500">
+        <div className="flex items-center gap-2 text-sm text-slate-600">
           <svg className="w-4 h-4 text-success-500" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
           </svg>
