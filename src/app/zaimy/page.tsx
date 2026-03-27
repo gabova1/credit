@@ -4,7 +4,7 @@ import { loans } from "@/lib/data";
 import OffersGrid from "@/components/OffersGrid";
 
 export const metadata: Metadata = {
-  title: "Займы без отказа онлайн 2024 — на карту за 5 минут, первый займ 0%",
+  title: "Займы без отказа онлайн 2026 — на карту за 5 минут, первый займ 0%",
   description:
     "Онлайн-займы без отказа на карту. Первый займ под 0% в проверенных МФО. Одобрение 93–98%, перевод за 5 минут. Сравните лучшие предложения прямо сейчас.",
   keywords: [
@@ -41,14 +41,14 @@ export default function ZaimyPage() {
             </svg>
             <span className="text-white">Займы</span>
           </nav>
-          
+
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 text-balance">
             Займы онлайн без отказа
           </h1>
           <p className="text-lg text-brand-100 max-w-2xl mb-8 text-pretty">
             Сравните {loans.length} предложений от проверенных МФО. Займы на карту без отказа за 5 минут. Первый займ под 0% доступен во многих компаниях.
           </p>
-          
+
           {/* Feature badges */}
           <div className="flex flex-wrap gap-3">
             {FEATURES.map((f) => (
@@ -76,7 +76,7 @@ export default function ZaimyPage() {
         <div className="container">
           <article className="max-w-4xl mx-auto">
             <h2 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-8">
-              Займы без отказа онлайн: полное руководство 2024
+              Займы без отказа онлайн: полное руководство 2026
             </h2>
             <div className="prose prose-slate prose-lg max-w-none">
               <p className="text-slate-600 leading-relaxed">
@@ -95,7 +95,7 @@ export default function ZaimyPage() {
               <p className="text-slate-600 leading-relaxed">
                 Большинство МФО предлагают новым клиентам специальные условия: первый займ под 0% на срок 7–30 дней. Это означает, что вы берёте 10 000 рублей и возвращаете ровно 10 000 рублей — без процентов и комиссий.
               </p>
-              
+
               <div className="bg-slate-50 rounded-2xl p-6 my-6">
                 <h4 className="font-semibold text-slate-900 mb-4">Лучшие предложения с 0%</h4>
                 <ul className="space-y-3">
