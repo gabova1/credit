@@ -3,9 +3,9 @@ import { cards } from "@/lib/data";
 import OffersGrid from "@/components/OffersGrid";
 
 export const metadata: Metadata = {
-  title: "Лучшие кредитные карты 2024 — сравнение, кэшбэк, беспроцентный период",
+  title: "Лучшие кредитные карты 2026 — сравнение, кэшбэк, беспроцентный период",
   description:
-    "Сравните лучшие кредитные карты 2024 года. Беспроцентный период до 120 дней, кэшбэк до 30%, лимит до 1 000 000 ₽. Т-Банк, Халва, Ак Барс и другие.",
+    "Сравните лучшие кредитные карты 2026 года. Беспроцентный период до 120 дней, кэшбэк до 30%, лимит до 1 000 000 ₽. Т-Банк, Халва, Ак Барс и другие.",
   keywords: [
     "лучшие кредитные карты",
     "кредитная карта без процентов",
@@ -28,7 +28,7 @@ export default function KreditnyeKartyPage() {
           <span className="text-white">Кредитные карты</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-          Лучшие кредитные карты 2024
+          Лучшие кредитные карты 2026
         </h1>
         <p className="text-slate-300 max-w-3xl leading-relaxed">
           Сравните {cards.length} кредитных карт ведущих банков. Беспроцентный период до 120 дней, кэшбэк до 30%, лимит до 1 000 000 ₽. Бесплатное оформление и доставка на дом.
@@ -60,7 +60,7 @@ export default function KreditnyeKartyPage() {
       {/* SEO article */}
       <article className="mt-16 glass-card p-8 prose prose-invert prose-sm max-w-none">
         <h2 className="text-2xl font-bold text-white mb-6">
-          Как выбрать лучшую кредитную карту в 2024 году
+          Как выбрать лучшую кредитную карту в 2026 году
         </h2>
         <div className="text-slate-300 space-y-4 text-sm leading-relaxed">
           <p>
@@ -69,7 +69,7 @@ export default function KreditnyeKartyPage() {
 
           <h3 className="text-lg font-semibold text-white mt-5">Что такое льготный период и как им пользоваться</h3>
           <p>
-            Льготный (грейс) период — это время, в течение которого банк не начисляет проценты на потраченные средства. Если вернуть долг до окончания льготного периода, кредит обойдётся бесплатно. Лучшие предложения 2024 года:
+            Льготный (грейс) период — это время, в течение которого банк не начисляет проценты на потраченные средства. Если вернуть долг до окончания льготного периода, кредит обойдётся бесплатно. Лучшие предложения 2026 года:
           </p>
           <ul className="list-none space-y-2">
             <li className="flex gap-2"><span className="text-amber-400">★</span><span><strong className="text-white">Т-Банк Платинум</strong> — до 120 дней без процентов, лимит до 1 000 000 ₽</span></li>
