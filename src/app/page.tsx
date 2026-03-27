@@ -104,8 +104,8 @@ export default function HomePage() {
         </div>
 
         <div className="container relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-semibold text-white mb-6 text-balance leading-[1.08] animate-slide-up">
+          <div className="max-w-5xl mx-auto text-center">
+            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6 leading-tight animate-slide-up">
               Финансовые решения для вашего бизнеса и жизни
             </h1>
             <p className="text-lg sm:text-xl leading-relaxed text-brand-100 mb-10 text-pretty animate-slide-up" style={{ animationDelay: "80ms", animationFillMode: "both" }}>
