@@ -4,7 +4,7 @@ import { debitCards } from "@/lib/data";
 import DebitCardsGrid from "@/components/DebitCardsGrid";
 
 export const metadata: Metadata = {
-  title: "Лучшие дебетовые карты 2024 — кэшбэк, бесплатное обслуживание, доставка",
+  title: "Лучшие дебетовые карты 2026 — кэшбэк, бесплатное обслуживание, доставка",
   description:
     "Сравните дебетовые карты ведущих банков России. Кэшбэк до 100%, бесплатное обслуживание, доставка курьером. Т-Банк, Альфа-Банк, УБРиР и другие.",
   keywords: [
@@ -42,14 +42,14 @@ export default function DebitovyeKartyPage() {
             </svg>
             <span className="text-white">Дебетовые карты</span>
           </nav>
-          
+
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 text-balance">
-            Лучшие дебетовые карты 2024
+            Лучшие дебетовые карты 2026
           </h1>
           <p className="text-lg text-success-100 max-w-2xl mb-8 text-pretty">
             Сравните {debitCards.length} дебетовых карт от {banks.length} банков. Кэшбэк до {maxCashback}%, бесплатное обслуживание, курьерская доставка.
           </p>
-          
+
           {/* Feature badges */}
           <div className="flex flex-wrap gap-3">
             {FEATURES.map((f) => (
@@ -77,7 +77,7 @@ export default function DebitovyeKartyPage() {
         <div className="container">
           <article className="max-w-4xl mx-auto">
             <h2 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-8">
-              Как выбрать лучшую дебетовую карту в 2024 году
+              Как выбрать лучшую дебетовую карту в 2026 году
             </h2>
             <div className="prose prose-slate prose-lg max-w-none">
               <p className="text-slate-600 leading-relaxed">
