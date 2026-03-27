@@ -18,19 +18,19 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+    <header className="sticky top-0 z-50 border-b border-white/30 bg-white/80 backdrop-blur-xl shadow-[0_8px_24px_rgba(16,36,63,0.08)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary-600 to-primary-700 shadow-md group-hover:shadow-lg transition-shadow">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 shadow-md transition-all group-hover:scale-105 group-hover:shadow-lg">
               <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
             <div>
-              <div className="font-bold text-slate-900 text-lg leading-tight">КредитПодбор</div>
-              <div className="text-xs text-slate-500 leading-tight">Подбор финансов онлайн</div>
+              <div className="font-display font-semibold text-slate-900 text-lg leading-tight tracking-tight">КредитПодбор</div>
+              <div className="text-xs text-slate-500 leading-tight">Умный подбор финансов онлайн</div>
             </div>
           </Link>
 
@@ -42,11 +42,10 @@ export default function Header() {
                 <Link
                   key={href}
                   href={href}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                    active
-                      ? "bg-primary-50 text-primary-700"
-                      : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
-                  }`}
+                  className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${active
+                      ? "bg-brand-50 text-brand-700 shadow-[inset_0_0_0_1px_rgba(18,104,219,0.15)]"
+                      : "text-slate-600 hover:text-slate-900 hover:bg-white/90"
+                    }`}
                 >
                   {label}
                 </Link>
@@ -56,7 +55,7 @@ export default function Header() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors"
+            className="lg:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-white transition-colors"
             onClick={() => setOpen(!open)}
             aria-label="Меню"
           >
@@ -74,7 +73,7 @@ export default function Header() {
 
         {/* Mobile menu */}
         {open && (
-          <div className="lg:hidden border-t border-slate-100 py-4 animate-slide-down">
+          <div className="lg:hidden border-t border-slate-200/70 py-4 animate-slide-down">
             <nav className="flex flex-col gap-1">
               {NAV.map(({ href, label }) => {
                 const active = pathname === href || (href !== "/" && pathname.startsWith(href));
@@ -83,11 +82,10 @@ export default function Header() {
                     key={href}
                     href={href}
                     onClick={() => setOpen(false)}
-                    className={`px-4 py-3 rounded-lg text-sm font-medium transition-all ${
-                      active
-                        ? "bg-primary-50 text-primary-700"
-                        : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
-                    }`}
+                    className={`px-4 py-3 rounded-lg text-sm font-semibold transition-all ${active
+                        ? "bg-brand-50 text-brand-700"
+                        : "text-slate-600 hover:text-slate-900 hover:bg-white"
+                      }`}
                   >
                     {label}
                   </Link>
