@@ -6,9 +6,9 @@ import OfferCard from "@/components/OfferCard";
 const offers = [...credits, ...loans];
 
 const CATEGORIES = [
-  { 
-    title: "Кредиты и займы", 
-    href: "/zaimy", 
+  {
+    title: "Кредиты и займы",
+    href: "/zaimy",
     count: offers.length,
     description: "Быстрое одобрение",
     color: "bg-brand-600",
@@ -19,9 +19,9 @@ const CATEGORIES = [
       </svg>
     )
   },
-  { 
-    title: "Дебетовые карты", 
-    href: "/debitovye-karty", 
+  {
+    title: "Дебетовые карты",
+    href: "/debitovye-karty",
     count: debitCards.length,
     description: "Кэшбэк до 30%",
     color: "bg-success-600",
@@ -32,9 +32,9 @@ const CATEGORIES = [
       </svg>
     )
   },
-  { 
-    title: "Вакансии", 
-    href: "/vakansii", 
+  {
+    title: "Вакансии",
+    href: "/vakansii",
     count: jobs.length,
     description: "Удалённая работа",
     color: "bg-purple-600",
@@ -45,9 +45,9 @@ const CATEGORIES = [
       </svg>
     )
   },
-  { 
-    title: "Страхование", 
-    href: "/strakhovanie", 
+  {
+    title: "Страхование",
+    href: "/strakhovanie",
     count: insurances.length,
     description: "Онлайн-оформление",
     color: "bg-orange-500",
@@ -61,32 +61,32 @@ const CATEGORIES = [
 ];
 
 const FEATURES = [
-  { 
+  {
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
     ),
-    title: "Проверенные предложения", 
-    desc: "Только надёжные партнёры" 
+    title: "Проверенные предложения",
+    desc: "Только надёжные партнёры"
   },
-  { 
+  {
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
-    title: "Быстрое оформление", 
-    desc: "Решение за 2 минуты" 
+    title: "Быстрое оформление",
+    desc: "Решение за 2 минуты"
   },
-  { 
+  {
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: "Без скрытых комиссий", 
-    desc: "Прозрачные условия" 
+    title: "Без скрытых комиссий",
+    desc: "Прозрачные условия"
   },
 ];
 
@@ -102,19 +102,19 @@ export default function HomePage() {
           <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-brand-400 rounded-full blur-3xl"></div>
         </div>
-        
+
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 text-balance leading-tight">
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold text-white mb-6 text-balance leading-[1.08] animate-slide-up">
               Финансовые решения для вашего бизнеса и жизни
             </h1>
-            <p className="text-lg sm:text-xl text-brand-100 mb-10 text-pretty">
-              Сравните предложения банков и получите деньги на карту за 2 минуты. 
+            <p className="text-lg sm:text-xl leading-relaxed text-brand-100 mb-10 text-pretty animate-slide-up" style={{ animationDelay: "80ms", animationFillMode: "both" }}>
+              Сравните предложения банков и получите деньги на карту за 2 минуты.
               Более 50 проверенных партнёров.
             </p>
-            
+
             {/* Quick actions */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: "160ms", animationFillMode: "both" }}>
               <Link
                 href="/zaimy"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-brand-700 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
@@ -139,7 +139,7 @@ export default function HomePage() {
       </section>
 
       {/* Features */}
-      <section className="py-8 bg-slate-50 border-b border-slate-200">
+      <section className="py-8 bg-white/60 backdrop-blur-sm border-y border-white/70">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {FEATURES.map((f, i) => (
@@ -158,12 +158,12 @@ export default function HomePage() {
       </section>
 
       {/* Categories */}
-      <section className="py-12 lg:py-16 bg-white">
+      <section className="py-12 lg:py-16">
         <div className="container">
           <h2 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-8 text-center">
             Выберите категорию
           </h2>
-          
+
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             {CATEGORIES.map((c) => (
               <Link
@@ -191,11 +191,11 @@ export default function HomePage() {
       </section>
 
       {/* Top Offers */}
-      <section className="py-12 lg:py-16 bg-slate-50">
-        <div className="container">
+      <section
+        className="py-12 lg:py-16">        <div className="container">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h2 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-2">
+              <h2 className="font-display text-2xl lg:text-3xl font-semibold text-slate-900 mb-2">
                 Лучшие предложения
               </h2>
               <p className="text-slate-500">Самые выгодные условия от наших партнёров</p>
@@ -210,13 +210,13 @@ export default function HomePage() {
               </svg>
             </Link>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {topOffers.map((offer, i) => (
               <OfferCard key={offer.id} offer={offer} index={i} />
             ))}
           </div>
-          
+
           <div className="mt-8 text-center sm:hidden">
             <Link
               href="/zaimy"
@@ -232,7 +232,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 lg:py-16 bg-white">
+      <section className="py-12 lg:py-16">
         <div className="container">
           <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 lg:p-12">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -265,7 +265,7 @@ export default function HomePage() {
               Готовы начать?
             </h2>
             <p className="text-slate-600 mb-8">
-              Выберите подходящее предложение и оформите заявку онлайн. 
+              Выберите подходящее предложение и оформите заявку онлайн.
               Деньги поступят на карту в течение нескольких минут.
             </p>
             <Link
