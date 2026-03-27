@@ -3,7 +3,7 @@ import { credits } from "@/lib/data";
 import OffersGrid from "@/components/OffersGrid";
 
 export const metadata: Metadata = {
-  title: "Кредиты наличными онлайн 2024 — подбор лучших предложений банков",
+  title: "Кредиты наличными онлайн 2026 — подбор лучших предложений банков",
   description:
     "Сравните кредиты наличными от ведущих банков России. Ставки от 7.5%, суммы до 30 000 000 ₽, решение онлайн за 1 минуту. Т-Банк, Альфа-Банк и другие.",
   keywords: [
@@ -60,7 +60,7 @@ export default function KredityPage() {
       {/* SEO article */}
       <article className="mt-16 glass-card p-8 prose prose-invert prose-sm max-w-none">
         <h2 className="text-2xl font-bold text-white mb-6">
-          Как получить кредит наличными в 2024 году
+          Как получить кредит наличными в 2026 году
         </h2>
         <div className="text-slate-300 space-y-4 text-sm leading-relaxed">
           <p>

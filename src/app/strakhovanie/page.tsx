@@ -4,7 +4,7 @@ import { insurances } from "@/lib/data";
 import InsuranceGrid from "@/components/InsuranceGrid";
 
 export const metadata: Metadata = {
-  title: "Страхование онлайн 2024 — ОСАГО, КАСКО, ВЗР, ипотека, жизнь",
+  title: "Страхование онлайн 2026 — ОСАГО, КАСКО, ВЗР, ипотека, жизнь",
   description:
     "Оформите страховку онлайн за 2–3 минуты. ОСАГО, КАСКО, страхование путешественников, ипотечное страхование. Полис на email сразу. Экономия до 50%.",
   keywords: [
@@ -51,14 +51,14 @@ export default function StrakhovaniePage() {
             </svg>
             <span className="text-white">Страхование</span>
           </nav>
-          
+
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 text-balance">
-            Страхование онлайн 2024
+            Страхование онлайн 2026
           </h1>
           <p className="text-lg text-orange-100 max-w-2xl mb-8 text-pretty">
             {insurances.length} предложений от проверенных страховщиков. ОСАГО, КАСКО, ВЗР, ипотека, жизнь и здоровье. Полис за 2–3 минуты, мгновенно на email.
           </p>
-          
+
           {/* Feature badges */}
           <div className="flex flex-wrap gap-3 mb-8">
             {FEATURES.map((f) => (
@@ -96,7 +96,7 @@ export default function StrakhovaniePage() {
         <div className="container">
           <article className="max-w-4xl mx-auto">
             <h2 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-8">
-              Страхование онлайн — полный гид 2024
+              Страхование онлайн — полный гид 2026
             </h2>
             <div className="prose prose-slate prose-lg max-w-none">
               <p className="text-slate-600 leading-relaxed">
