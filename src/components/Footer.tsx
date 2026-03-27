@@ -28,7 +28,7 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <span className="font-display font-semibold text-white text-lg tracking-tight">КредитПодбор</span>
+              <span className="font-display font-semibold text-white text-lg tracking-tight">ФинансПодбор</span>
             </div>
             <p className="text-sm text-slate-200/90 leading-relaxed max-w-md">
               Бесплатный сервис подбора кредитов, займов и кредитных карт. Сравниваем предложения ведущих банков и МФО России для вашего удобства.
@@ -81,7 +81,7 @@ export default function Footer() {
         <div className="mt-10 pt-8 border-t border-white/10">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm text-slate-300">
-              © {new Date().getFullYear()} КредитПодбор. Сервис сравнения финансовых продуктов.
+              © {new Date().getFullYear()} ФинансПодбор. Сервис сравнения финансовых продуктов.
             </p>
             <div className="flex items-center gap-4">
               <span className="text-xs text-slate-200 px-3 py-1 bg-white/10 rounded-full border border-white/15">18+</span>
